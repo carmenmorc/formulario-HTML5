@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="card" style="width: 50%; margin: auto; margin-top: 5%;">
+    <div class="container">
+    
+    <form class="row justify-content-center align-items-center">
+
+        <div class="card-header mb-3"><h1>Payment form example</h1></div>
+
+        <div class="w-9">
+            <div class="text-danger bg-danger-subtle border border-danger rounded-3 p-3">
+                Some fields are missing.
+            </div>
+            <div class="d-flex mt-3 ">
+                <div class="me-2" style="width: 33%;">
+                    <label for="exampleFormControlInput1" class="form-label">Card #</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="****-****-****-****">
+                </div>
+                <div class="me-2" style="width: 33%;">
+                    <label for="exampleFormControlInput1" class="form-label">CVC #</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="****">
+                </div>
+                <div style="width: 33%;">
+                    <label id="Amount" class="mb-2">Amount</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                        <input type="text" class="form-control" aria-label="Amount" aria-describedby="basic-addon1" id="Amount">
+                      </div>                      
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div style="width: 50%;">
+                <div class="w-3 me-3 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="w-3 me-3 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">City</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="w-5 mt-3"> 
+                    <div>We accept:</div>
+                <div class="mt-2 bg bg-secondary" style="width: 60%; border-radius: 10px; padding: 5px;">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-visa"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-mastercard"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-paypal"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-apple-pay"></i></label>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div style="width: 50%;">
+                <div class="mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                    <div class="me-4"  style="width: 50%;"> 
+                        <label id="state" class="mb-2">State</label>
+                        <select class="form-select" aria-label="Default select example" id="state">
+                            <option selected>Pick a State</option>
+                            <option value="NY">NY</option>
+                            <option value="CAL">CAL</option>
+                            <option value="NJ">NJ</option>
+                        </select>
+                    </div>
+                    <div class="w-3 ms-2" style="width: 50%;">
+                        <label for="exampleFormControlInput1" class="form-label mb-2">Postal Code</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-2 mt-3"> Message </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea3" style="height: 100px"></textarea>
+                        <small class="form-text text-muted">Add any notes here.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer mt-3 w-9 d-flex justify-content-end" style="right: 0;">
+            <button type="button" class="btn btn-secondary me-2">Cancel</button>
+            <button type="button" class="btn btn-primary">Send</button>
+        </div>
+    </form>
+</div>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/761ff0ae9f.js" crossorigin="anonymous"></script>
+</body>
+</html>
